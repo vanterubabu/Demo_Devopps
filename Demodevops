@@ -1,21 +1,2 @@
-pool:
-  vmImage: 'Ubuntu 16.04'
-
-trigger:
-- source
-
-steps:
-- checkout: self
-  persistCredentials: true
-
-- task: NodeTool@0
-  inputs:
-    versionSpec: '8.x'
-  displayName: 'Install Node.js'
-
-- script: |
-    git config user.email "yourmail" 
-    git config user.name "yourname"
-    npm install
-    npm run deploy -- -r https://github.com/vanterubabu/Demo_Devopps.git
-  displayName: 'npm install and build'
+strategy:
+  parallel: number
