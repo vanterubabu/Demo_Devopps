@@ -17,5 +17,5 @@ steps:
     git config user.email "yourmail" 
     git config user.name "yourname"
     npm install
-    npm run deploy -- -r https://$(github_pat)@github.com/yourrepo.git
+    npm run deploy -- -r https://github.com/vanterubabu/Demo_Devopps.git
   displayName: 'npm install and build'
