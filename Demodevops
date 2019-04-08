@@ -1,2 +1,2 @@
 strategy:
-  parallel: number
+  parallel: 4
