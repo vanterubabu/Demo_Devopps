@@ -4,8 +4,8 @@
 		"description": "IncrementalDataCopy",
 		"activities": [
 			{
-				"name": "IncrementalDataCopy",
-				"description": "IncrementalDataCopy",
+				"name": "LookupOldWaterMarkActivity",
+				"description": "LookupOldWaterMarkActivity",
 				"type": "Lookup",
 				"policy": {
 					"timeout": "7.00:00:00",
@@ -58,7 +58,7 @@
 						]
 					},
 					{
-						"activity": "IncrementalDataCopy",
+						"activity": "LookupOldWaterMarkActivity",
 						"dependencyConditions": [
 							"Succeeded"
 						]
