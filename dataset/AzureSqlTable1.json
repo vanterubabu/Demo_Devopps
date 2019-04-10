@@ -1,0 +1,28 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"description": "AzureSqlTable1",
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"type": "AzureSqlTable",
+		"structure": [
+			{
+				"name": "empid",
+				"type": "Int32"
+			},
+			{
+				"name": "empname",
+				"type": "String"
+			},
+			{
+				"name": "salary",
+				"type": "Decimal"
+			}
+		],
+		"typeProperties": {
+			"tableName": "[dbo].[datafactory]"
+		}
+	}
+}
