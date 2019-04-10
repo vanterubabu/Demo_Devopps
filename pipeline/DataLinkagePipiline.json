@@ -4,15 +4,15 @@
 		"description": "DataLinkagePipiline",
 		"activities": [
 			{
-				"name": "Copy Data1",
-				"description": "Copy Data1",
+				"name": "SourceTable",
+				"description": "Copying data from Source to Target",
 				"type": "Copy",
 				"policy": {
 					"timeout": "7.00:00:00",
 					"retry": 1,
 					"retryIntervalInSeconds": 30,
-					"secureOutput": true,
-					"secureInput": true
+					"secureOutput": false,
+					"secureInput": false
 				},
 				"typeProperties": {
 					"source": {
