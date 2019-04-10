@@ -38,7 +38,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "SqlSource",
-						"sqlReaderQuery": "select max(LastModifiedtime) as watermarkvalue from data_source_table"
+						"sqlReaderQuery": "select MAX(LastModifytime) as NewWatermarkvalue from data_source_table"
 					},
 					"dataset": {
 						"referenceName": "IncrementalSourcelookup",
